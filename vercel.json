@@ -1,1 +1,6 @@
-
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/submit_user", "dest": "/api/submit_user.js" }
+  ]
+}
