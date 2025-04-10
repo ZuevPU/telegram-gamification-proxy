@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   }
 
   const { user_id, keyword } = req.body;
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwUg0_z35KtnD9vd0xvLa5orArM0LtgwcrYTqxt2l6hjuxK_zvGLHTyzxgu0vH_UuQB/exec';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbzyEMI5C-6-PKXPCB2xtctctKOYkI_PeYcCt3RA-mtd-5nYQgxk9jGl0uixUkhHJXhi/exec';
 
   try {
     const response = await fetch(scriptUrl + '?action=keyword', {
