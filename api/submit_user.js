@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     return res.status(405).send({ message: 'Only POST allowed' });
   }
 
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbxsWmjMEKQlsRaz-ELm3Qj70ryi4YJ9f4SVv3679CfGC4q9mqDjTJ5tRWJeY1s4bj2J/exec';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbzk9yz6BmO1ZKGvMEYLW_h6JJlpZAcipgM9rd4ul3kqZlHOyLqO7NUatmcOcAhZFN-2/exec';
 
   try {
     const response = await fetch(scriptUrl, {
