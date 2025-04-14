@@ -1,3 +1,5 @@
+import { GOOGLE_SCRIPT_URL } from '@/config';
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -12,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   const { user_id, keyword } = req.body;
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbzyEMI5C-6-PKXPCB2xtctctKOYkI_PeYcCt3RA-mtd-5nYQgxk9jGl0uixUkhHJXhi/exec';
+  const scriptUrl = `${GOOGLE_SCRIPT_URL}?action=video`;
 
   try {
     const response = await fetch(scriptUrl + '?action=keyword', {
