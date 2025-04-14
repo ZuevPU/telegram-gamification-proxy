@@ -1,5 +1,4 @@
-import { GOOGLE_SCRIPT_URL } from './config';
-
+// ✅ /api/submit_video.js
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -10,7 +9,7 @@ export default async function handler(req, res) {
   const { user_id, username, url } = req.body;
 
   try {
-    const response = await fetch(`${GOOGLE_SCRIPT_URL}?action=video`, {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwspegZdmoMOzAGWkRFyCKVfBdrLBTCJcf8H0CpRrxdNMeEYguFQHAtWmP7lEjxfJC1/exec?action=video', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id, username, url })
