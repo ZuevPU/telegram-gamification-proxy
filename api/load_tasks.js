@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  const scriptUrl = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=load_tasks';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwspegZdmoMOzAGWkRFyCKVfBdrLBTCJcf8H0CpRrxdNMeEYguFQHAtWmP7lEjxfJC1/exec';
   try {
     const response = await fetch(scriptUrl);
     const tasks = await response.json();
