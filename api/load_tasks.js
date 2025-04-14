@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   if (req.method === 'OPTIONS') return res.status(200).end();
 
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwspegZdmoMOzAGWkRFyCKVfBdrLBTCJcf8H0CpRrxdNMeEYguFQHAtWmP7lEjxfJC1/exec?action=load_tasks';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbzl-_4FlWDCTLwyqypHwiLKWHehLOsUmDOtA9YQ7JSjzgmRys0H9uk1eue4kcHnywfc/exec?action=load_tasks';
 
   try {
     const response = await fetch(scriptUrl);
