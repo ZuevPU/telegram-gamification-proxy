@@ -1,15 +1,11 @@
-import { GOOGLE_SCRIPT_URL } from '@/config';
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-if (req.method === 'OPTIONS') {
-  return res.status(200).end(); // preflight
-}
+  if (req.method === 'OPTIONS') return res.status(200).end();
 
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  const scriptUrl = `${GOOGLE_SCRIPT_URL}?action=video`;
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwspegZdmoMOzAGWkRFyCKVfBdrLBTCJcf8H0CpRrxdNMeEYguFQHAtWmP7lEjxfJC1/exec?action=load_tasks';
   try {
     const response = await fetch(scriptUrl);
     const tasks = await response.json();
