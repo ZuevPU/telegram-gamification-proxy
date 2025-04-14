@@ -1,3 +1,4 @@
+import { GOOGLE_SCRIPT_URL } from '@/config';
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -5,7 +6,7 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end();
 
   const { user_id, username, url, task } = req.body;
-  const scriptUrl = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=submit_response';
+  const scriptUrl = `${GOOGLE_SCRIPT_URL}?action=video`;
 
   try {
     const response = await fetch(scriptUrl, {
