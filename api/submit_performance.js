@@ -1,3 +1,4 @@
+import { GOOGLE_SCRIPT_URL } from '@/config';
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -6,7 +7,7 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).send({ message: 'Only POST allowed' });
 
   const { user_id, username, text } = req.body;
-  const scriptUrl = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?action=performance';
+  const scriptUrl = `${GOOGLE_SCRIPT_URL}?action=video`;
 
   try {
     const response = await fetch(scriptUrl, {
