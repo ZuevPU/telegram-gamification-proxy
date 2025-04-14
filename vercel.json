@@ -1,6 +1,11 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/api/submit_user", "dest": "/api/submit_user.js" }
+    { "src": "/api/submit_user", "dest": "/api/submit_user.js" },
+    { "src": "/api/submit_keyword", "dest": "/api/submit_keyword.js" },
+    { "src": "/api/submit_video", "dest": "/api/submit_video.js" },
+    { "src": "/api/submit_performance", "dest": "/api/submit_performance.js" },
+    { "src": "/api/submit_task_response", "dest": "/api/submit_task_response.js" },
+    { "src": "/api/load_tasks", "dest": "/api/load_tasks.js" }
   ]
 }
