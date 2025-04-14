@@ -1,6 +1,7 @@
+import { GOOGLE_SCRIPT_URL } from '@/config';
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwspegZdmoMOzAGWkRFyCKVfBdrLBTCJcf8H0CpRrxdNMeEYguFQHAtWmP7lEjxfJC1/exec';
+  const scriptUrl = `${GOOGLE_SCRIPT_URL}?action=video`;
   try {
     const response = await fetch(scriptUrl);
     const tasks = await response.json();
