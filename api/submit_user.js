@@ -14,8 +14,8 @@ export default async function handler(req, res) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id, username })
     });
-    const text = await response.text();
-    res.status(200).send(text);
+const json = await response.json();
+res.status(200).json(json);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Google Script error' });
