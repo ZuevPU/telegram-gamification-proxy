@@ -11,7 +11,7 @@ export default async function handler(req, res) {
   }
 
   try {
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbzl-_4FlWDCTLwyqypHwiLKWHehLOsUmDOtA9YQ7JSjzgmRys0H9uk1eue4kcHnywfc/exec?action=load_tasks';
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbwGfkIR1MxROvTwgdhmnI10rYLdt02dLxxyTZRnA1cxw_CcAypkreUQYsnKwXPIq-I1/exec?action=load_tasks';
 
     const response = await fetch(scriptUrl);
     const text = await response.text();
