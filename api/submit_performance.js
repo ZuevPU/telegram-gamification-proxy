@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   const { user_id, username, text } = req.body;
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbwGfkIR1MxROvTwgdhmnI10rYLdt02dLxxyTZRnA1cxw_CcAypkreUQYsnKwXPIq-I1/exec?action=performance', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycby0ZaGp-y9RB_WD7hhdeXjyJ57Jz94Jd-rqKmaY-PtEfbOwsyM00Km91vCvDgyIQxAN/exec?action=performance', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id, username, text })
