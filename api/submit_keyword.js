@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   const { user_id, keyword } = req.body;
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbyQeyN0l-sRr674cS8nnJoV9ag_Gve6Fs2anJrCqSJEzcKMxzXcchICogpZ3EbpW-EZ/exec?action=keyword', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycby0ZaGp-y9RB_WD7hhdeXjyJ57Jz94Jd-rqKmaY-PtEfbOwsyM00Km91vCvDgyIQxAN/exec?action=keyword', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ user_id, keyword })
