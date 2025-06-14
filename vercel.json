@@ -2,31 +2,31 @@
     "rewrites": [
         {
             "source": "/api/submit_user",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=submit_user"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=submit_user"
         },
         {
             "source": "/api/submit_keyword",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=keyword"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=keyword"
         },
         {
             "source": "/api/submit_video",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=video"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=video"
         },
         {
             "source": "/api/submit_performance",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=performance"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=performance"
         },
         {
             "source": "/api/load_tasks",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=load_tasks"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=load_tasks"
         },
         {
             "source": "/api/submit_task_response",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=submit_response"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=submit_response"
         },
         {
             "source": "/api/buy_lot",
-            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=buy_lot"
+            "destination": "https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec?action=buy_lot"
         }
     ],
     "headers": [
