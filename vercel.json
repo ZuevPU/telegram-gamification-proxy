@@ -1,11 +1,45 @@
 {
-  "version": 2,
-  "routes": [
-    { "src": "/api/submit_user", "dest": "/api/submit_user.js" },
-    { "src": "/api/submit_keyword", "dest": "/api/submit_keyword.js" },
-    { "src": "/api/submit_video", "dest": "/api/submit_video.js" },
-    { "src": "/api/submit_performance", "dest": "/api/submit_performance.js" },
-    { "src": "/api/submit_task_response", "dest": "/api/submit_task_response.js" },
-    { "src": "/api/load_tasks", "dest": "/api/load_tasks.js" }
-  ]
+    "rewrites": [
+        {
+            "source": "/api/submit_user",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=submit_user"
+        },
+        {
+            "source": "/api/submit_keyword",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=keyword"
+        },
+        {
+            "source": "/api/submit_video",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=video"
+        },
+        {
+            "source": "/api/submit_performance",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=performance"
+        },
+        {
+            "source": "/api/load_tasks",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=load_tasks"
+        },
+        {
+            "source": "/api/submit_task_response",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=submit_response"
+        },
+        {
+            "source": "/api/buy_lot",
+            "destination": "https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec?action=buy_lot"
+        }
+    ],
+    "headers": [
+      {
+        "source": "/api/(.*)", // Применяет эти заголовки ко всем запросам, начинающимся с /api/
+        "headers": [
+          { "key": "Access-Control-Allow-Credentials", "value": "true" },
+          { "key": "Access-Control-Allow-Origin", "value": "*" }, // Разрешает запросы с любого домена
+          // Для большей безопасности, можете указать конкретный домен:
+          // { "key": "Access-Control-Allow-Origin", "value": "https://zuevpu.github.io" },
+          { "key": "Access-Control-Allow-Methods", "value": "GET,DELETE,PATCH,POST,PUT,OPTIONS" },
+          { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
+        ]
+      }
+    ]
 }
