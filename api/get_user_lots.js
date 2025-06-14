@@ -1,4 +1,4 @@
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbzKlFMbvz8vMV2qtsgJTUuqEc2GtjBw11k_KQ8EiOMyr-5Q08r3JuPSeDquYMv3_wo9/exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec';
 
 export default async function handler(req, res) {
     const allowedOrigin = 'https://zuevpu.github.io';
