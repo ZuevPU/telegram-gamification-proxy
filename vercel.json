@@ -31,12 +31,10 @@
     ],
     "headers": [
       {
-        "source": "/api/(.*)", // Применяет эти заголовки ко всем запросам, начинающимся с /api/
+        "source": "/api/(.*)", 
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
-          { "key": "Access-Control-Allow-Origin", "value": "*" }, // Разрешает запросы с любого домена
-          // Для большей безопасности, можете указать конкретный домен:
-          // { "key": "Access-Control-Allow-Origin", "value": "https://zuevpu.github.io" },
+          { "key": "Access-Control-Allow-Origin", "value": "*" }, 
           { "key": "Access-Control-Allow-Methods", "value": "GET,DELETE,PATCH,POST,PUT,OPTIONS" },
           { "key": "Access-Control-Allow-Headers", "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version" }
         ]
