@@ -1,14 +1,12 @@
 const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzjSSb5TAZVupX0FsParQsw2R5bPNgaunOUO6JJZfXAcDeqQ2ASDZ9LeiRL4GvOnWAY/exec';
 
-module.exports = async (req, res) => {
-    // Устанавливаем CORS-заголовки
+export default async function handler(req, res) {
     const allowedOrigin = 'https://zuevpu.github.io';
 
     res.setHeader('Access-Control-Allow-Origin', allowedOrigin);
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-    // Если preflight-запрос (OPTIONS), просто отвечаем 200
     if (req.method === 'OPTIONS') {
         res.status(200).end();
         return;
@@ -49,4 +47,4 @@ module.exports = async (req, res) => {
         console.error('Ошибка в buy_lot Vercel функция:', error);
         res.status(500).json({ status: 'error', message: 'Internal Server Error' });
     }
-};
+}
